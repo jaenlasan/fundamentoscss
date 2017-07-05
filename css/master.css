@@ -1,0 +1,89 @@
+/*Body y fondo*/
+body{
+  margin: auto;
+  width: 70%;
+  background-color: black;
+}
+/*Todas Las Imagenes*/
+img{
+  box-shadow: 3px 3px 0 black;
+}
+/*Menú Prinicipal y Título*/
+a{
+  font-family: 'Dancing Script', cursive;
+}
+header{
+  background-color: #5b7989;
+  display: flex;
+  flex-flow: row;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+.menu-derecha{
+  margin-top: 3%;
+  width: 30%;
+}
+.titulo{
+  margin-left: 1%;
+  width: 70%;
+}
+header a{
+  margin-left: 10%;
+  font-size: 1.1em;
+  color: white;
+}
+.active{
+  text-decoration: none;
+}
+/*Ancho de contenedor*/
+.contenedor{
+  width: 100%;
+}
+/*Imagen Principal*/
+.bloque-principal{
+  width: 100%;
+  background-color: #82c3a6;
+  text-align: center;
+  display: flex;
+}
+.imagen-caballo{
+  width: 70%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+/*Animaciones*/
+.osos{
+  transition-property: all;
+  transition-duration: 1s;
+}
+.osos:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px 2px #82c3a6;
+  border: solid black 2px;
+}
+.perritos{
+  transition-property: all;
+  transition-duration: 1s;
+}
+.perritos:hover{
+  transform: translate3d(20px, -5px, 0);
+  box-shadow: 2px 2px 2px #82c3a6;
+  border: solid black 2px;
+}
+/*Imagenes Secundarias Computador*/
+@media (min-width:600px) {
+  .bloque-secundario{
+    background-color:  #d5c75f;
+    display: flex;
+  }
+  .bloque-secundario  img{
+    height: 100%;
+    margin: 5%;
+  }
+  .perritos{
+    width: 38.15%;
+  }
+  .osos{
+    width: 40%;
+  }
+}
