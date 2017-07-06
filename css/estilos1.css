@@ -61,13 +61,14 @@ footer{
   flex-flow: row;
   background-color: #C6d5c5;
   border-radius: 0 0 10px 10px;
+  font-weight: bold;
 }
 footer > div {
     width: 25%;
     text-align: center;
+
 }
 p{
-  font-weight: bold;
   margin-left:2%;
   margin-right: 2%;
   margin-top: 5%;
@@ -82,56 +83,32 @@ p{
 footer h2{
   margin-bottom: 1%;
 }
-.redes-sociales{
-  display: flex;
-  flex-flow: column;
-  font-weight: bold;
+/*Filtros*/
+#imagen1{
+  filter: blur(10px);
 }
-/*Imagen Principal*/
-.bloque-principal{
-  width: 100%;
-  background-color: #82c3a6;
-  text-align: center;
-  display: flex;
+#imagen2, #imagen4, #imagen6{
+  filter: grayscale(100%);
 }
-.imagen-caballo{
-  width: 100%;
-}
-/*Animaciones*/
-.paisaje{
-  transition-property: transform, box-shadow, border;
-  transition-duration: 1s;
-}
-.paisaje:hover{
-  transform: rotate(10deg);
-  box-shadow: 2px 2px 2px #82c3a6;
-  border: solid black 2px;
-}
-.retrato{
-  transition-property: transform, box-shadow, border;
-  transition-duration: 1s;
-}
-.retrato:hover{
-  transform: translate3d(20px, -5px, 0);
-  box-shadow: 2px 2px 2px #82c3a6;
-  border: solid black 2px;
+#imagen3{
+  filter: sepia(90%);
 }
 /*Imagenes Secundarias Computador*/
 @media (min-width:901px) {
   .bloque-secundario figure{
-    width: 50%;
-    margin: 2% 5%;
+    width: 25%;
+    margin: 2% 4%;
   }
   .paisaje{
     width: 100%;
   }
   .retrato{
-    width: 93%;
+    width:100%;
   }
   .bloque-secundario{
     background-color:#d5c75f ;
     display: flex;
-    text-align: center;
+    flex-flow: wrap;
   }
 }
 /*Responsive Celular*/
@@ -149,9 +126,6 @@ footer h2{
     width: 100%;
     margin-left: 5%;
     margin-bottom: 1%;
-  }
-  .redes-sociales img{
-    width: 5%;
   }
   .titulo{
     width: 100%;
@@ -179,11 +153,13 @@ footer h2{
     width: 100%;
     margin-bottom: 5%;
   }
-
   p{
     margin: 0 1% 0 1%;
   }
   .bloque-secundario figure{
     margin: 4% ;
+  }
+  .redes-sociales img{
+    width: 5%;
   }
 }
