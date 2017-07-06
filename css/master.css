@@ -9,7 +9,7 @@ img{
   box-shadow: 3px 3px 0 black;
 }
 /*Menú Prinicipal y Título*/
-a{
+header > div > a{
   font-family: 'Dancing Script', cursive;
 }
 header{
@@ -38,6 +38,8 @@ header a{
 /*Ancho de contenedor*/
 .contenedor{
   width: 100%;
+  display:flex;
+  flex-flow: column;
 }
 /*Imagen Principal*/
 .bloque-principal{
@@ -47,13 +49,13 @@ header a{
   display: flex;
 }
 .imagen-caballo{
-  width: 70%;
+  width: 100%;
   margin-top: 3%;
   margin-bottom: 3%;
 }
 /*Animaciones*/
 .osos{
-  transition-property: all;
+  transition-property: transform, box-shadow, border;
   transition-duration: 1s;
 }
 .osos:hover{
@@ -62,7 +64,7 @@ header a{
   border: solid black 2px;
 }
 .perritos{
-  transition-property: all;
+  transition-property: transform, box-shadow, border;
   transition-duration: 1s;
 }
 .perritos:hover{
@@ -71,19 +73,17 @@ header a{
   border: solid black 2px;
 }
 /*Imagenes Secundarias Computador*/
-@media (min-width:600px) {
-  .bloque-secundario{
-    background-color:  #d5c75f;
-    display: flex;
-  }
-  .bloque-secundario  img{
-    height: 100%;
-    margin: 5%;
-  }
-  .perritos{
-    width: 38.15%;
-  }
-  .osos{
-    width: 40%;
-  }
+.bloque-secundario figure{
+  background-color: green;
+  text-align: center;
 }
+.osos{
+  width: 100%;
+}
+.perritos{
+  width: 100%;
+}
+.bloque-secundario{
+  background-color: white;
+}
+/*Imagenes Secundarias Celular*/
